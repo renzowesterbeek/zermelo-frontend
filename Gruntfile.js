@@ -1,5 +1,5 @@
 module.exports = function(grunt){
-	
+
 	grunt.initConfig({
 		// Metadata
 		pkg: grunt.file.readJSON('package.json'),
@@ -7,7 +7,7 @@ module.exports = function(grunt){
       '<%= grunt.template.today("yyyy-mm-dd") %>\n' +
       '* Copyright (c) <%= grunt.template.today("yyyy") %> <%= pkg.author_name %>;' +
       ' Licensed <%= _.pluck(pkg.licenses, "type").join(", ") %> */\n',
-		
+
 		// Task configuration
 		concat: {
       options: {
@@ -59,7 +59,7 @@ module.exports = function(grunt){
 	        removeComments: true,
 	        collapseWhitespace: true
 	      },
-	      files: { 
+	      files: {
 	        'dist/index.html': 'index.html',	// dest : src
 	      }
 	    }
@@ -97,13 +97,13 @@ module.exports = function(grunt){
 	      tasks: ['sass'],
 	    },
 	    html: {
-	      files: '/**/*.html',
+	      files: '*.html',
 	      tasks: ['htmlmin'],
 	    },
 	  } // end of task config
-		
+
 	}); // end of grunt.initConfig
-	
+
 	// Load plugins
 	grunt.loadNpmTasks('grunt-contrib-concat');
 	grunt.loadNpmTasks('grunt-contrib-uglify');
@@ -114,10 +114,10 @@ module.exports = function(grunt){
 	grunt.loadNpmTasks('grunt-contrib-copy');
 	grunt.loadNpmTasks('grunt-contrib-clean');
 	grunt.loadNpmTasks('grunt-ftp-deploy');
-	
+
 	// Tasks
 	grunt.registerTask('test', ['jshint']);
 	grunt.registerTask('default', ['clean', 'jshint', 'concat', 'uglify', 'sass', 'htmlmin', 'copy']);
 	grunt.registerTask('deploy', ['clean', 'concat', 'uglify', 'sass', 'htmlmin', 'copy', 'ftp-deploy']);
-	
+
 };
