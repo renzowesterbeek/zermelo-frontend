@@ -12,12 +12,13 @@
 	  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
 	  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 	<![endif]-->
-	<link href="css/styles.min.css" rel="stylesheet" type="text/css">
+	<link href="css/base.min.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 	<div class="container">
 		<h1>Notificaties voor InfoWeb</h1>
-		<p>Je wilt niet de hele dag je rooster in de gaten houden om te kijken of er wijzigingen zijn of om te checken of je eindelijk een keer uitval hebt. Met deze dienst krijg je automatisch een notificatie op je telefoon als er iets in je rooster veranderd is. Like ons ook op Facebook.</p>
+		<span id="menu"><a href="index.html">Home</a> | <a href="#">Afmelden</a> | <a href="#">Facebook</a></span>
+		<p>Je wilt niet de hele dag je rooster in de gaten houden om te kijken of er wijzigingen zijn of om te checken of je eindelijk een keer uitval hebt. Met deze dienst krijg je automatisch een notificatie op je telefoon als er iets in je rooster veranderd is.</p>
 
 		<h2>Hoe het werkt</h2>
 		<ol>
@@ -31,11 +32,12 @@
 		<span>DOWNLOAD BOXES FOR ANDROID AND IOS</span>
 
 		<h2>Registreer</h2>
-		<form action="http://localhost:8080/register" method="post">
+		<form action="http://localhost:3000/register" method="post">
 			<input type="text" placeholder="O101250" name="leerlingnum">
 			<input type="text" placeholder="pushbulletEmail@gmail.com" name="email">
 			<input type="submit" value="Registreer!">
 		</form>
+		<p id="errors"><!-- Errors are being displayed here --></p>
 
 		<h2>Ontvang notificaties</h2>
 		<p>Je ontvangt na de registratie eerst een welkomstbericht. Je account is dan geactiveerd. Vanaf nu ontvang je notificaties over rooster-updates.</p>

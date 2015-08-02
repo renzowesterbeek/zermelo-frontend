@@ -31,6 +31,6 @@ app.post('/register', function(req, res) {
     res.redirect("http://localhost/iweb-website/");
 });
 
-var server = app.listen(8080, function () {
-  console.log('Example app listening at port 8080');
+var server = app.listen(3000, function () {
+  console.log('Example app listening at port 3000');
 });

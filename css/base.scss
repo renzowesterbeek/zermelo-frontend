@@ -5,6 +5,19 @@
 body{
 	font-family: $body-font-stack;
 }
-h1{
+h1,
+h2,
+h3{
 	font-family: $header-font-stack;
+	text-transform: uppercase;
+	text-align: center;
+}
+p{
+	text-align: center;
+}
+footer{
+	position: absolute;
+	bottom: 0;
+	text-align: center;
+	width: inherit;
 }
