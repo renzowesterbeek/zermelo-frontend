@@ -1,0 +1,10 @@
+@import '_colors.scss';		// Color declarations
+@import '_mixins.scss';		// Cross-browser implementation of transitions, shadows, etc
+@import '_fonts.scss';		// Font and font-style declarations
+
+body{
+	font-family: $body-font-stack;
+}
+h1{
+	font-family: $header-font-stack;
+}
