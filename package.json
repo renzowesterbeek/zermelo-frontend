@@ -12,5 +12,10 @@
     "grunt-contrib-copy": "~0.7.0",
     "grunt-contrib-clean": "~0.4.0",
     "grunt-ftp-deploy": "~0.1.0"
+  },
+  "dependencies": {
+    "body-parser": "^1.13.3",
+    "express": "^4.13.2",
+    "mongojs": "^1.2.1"
   }
 }

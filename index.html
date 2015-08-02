@@ -15,24 +15,36 @@
 	<link href="css/styles.min.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-	<h1>Notificaties voor InfoWeb</h1>
-	<p>Je wilt niet de hele dag je rooster in de gaten houden om te kijken of er wijzigingen zijn of om te checken of je eindelijk een keer uitval hebt. Met deze dienst krijg je automatisch een notificatie op je telefoon als er iets in je rooster veranderd is. Like ons ook op Facebook.</p>
+	<div class="container">
+		<h1>Notificaties voor InfoWeb</h1>
+		<p>Je wilt niet de hele dag je rooster in de gaten houden om te kijken of er wijzigingen zijn of om te checken of je eindelijk een keer uitval hebt. Met deze dienst krijg je automatisch een notificatie op je telefoon als er iets in je rooster veranderd is. Like ons ook op Facebook.</p>
 
-	<h2>Hoe het werkt</h2>
-	<ol>
-		<li>Download de Pushbullet app voor iPhone of Android</li>
-		<li>Login op de Pushbullet app op je telefoon, gewoon met je Google-account</li>
-		<li>Registreer je op deze website met je leerlingnummer en je (bij Pushbullet geregistreerde) e-mailadres</li>
-		<li>Je bent klaar met deze het opzetten van je notificaties! Je krijgt nu een notificatie bij een roosterwijziging of uitval</li>
-	</ol>
+		<h2>Hoe het werkt</h2>
+		<ol>
+			<li>Download de Pushbullet app voor iPhone of Android</li>
+			<li>Login op de Pushbullet app op je telefoon, gewoon met je Google-account</li>
+			<li>Registreer je op deze website met je leerlingnummer en je (bij Pushbullet geregistreerde) e-mailadres</li>
+			<li>Je bent klaar met deze het opzetten van je notificaties! Je krijgt nu een notificatie bij een roosterwijziging of uitval</li>
+		</ol>
 
-	<h2>Download</h2>
-	<span>DOWNLOAD BOXES FOR ANDROID AND IOS</span>
+		<h2>Download</h2>
+		<span>DOWNLOAD BOXES FOR ANDROID AND IOS</span>
 
-	<h2>Registreer</h2>
+		<h2>Registreer</h2>
+		<form action="http://localhost:8080/register" method="post">
+			<input type="text" placeholder="O101250" name="leerlingnum">
+			<input type="text" placeholder="pushbulletEmail@gmail.com" name="email">
+			<input type="submit" value="Registreer!">
+		</form>
 
-	<h2>Ontvang notificaties</h2>
+		<h2>Ontvang notificaties</h2>
+		<p>Je ontvangt na de registratie eerst een welkomstbericht. Je account is dan geactiveerd. Vanaf nu ontvang je notificaties over rooster-updates.</p>
+		<p>Like deze dienst ook op <a href="#">Facebook</a>.</p>
 
+		<footer>
+			<p>Deze website is gemaakt door <a href="mailto:renzowesterbeek@gmail.com">Renzo Westerbeek</a> in 2014-15</p>
+		</footer>
+	</div>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 	<script src="js/scripts.min.js"></script>
