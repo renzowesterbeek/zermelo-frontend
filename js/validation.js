@@ -5,9 +5,12 @@
 var inputErrors = [];
 
 function validateInput(){
-  console.log("Some errors occured, form not submitted");
-  console.log(inputErrors);
   if(inputErrors.length > 0){
+    console.log("Some errors occured, form not submitted:");
+    console.log(inputErrors);
+    return false;
+  } else if($("#leerlingnum").val().length === 0 || $("#email").val().length === 0){
+    console.log("Can't leave fields empty");
     return false;
   } else {
     return true;
