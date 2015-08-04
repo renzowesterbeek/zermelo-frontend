@@ -28,9 +28,9 @@ app.post('/register', function(req, res) {
     //   res.redirect("http://localhost/iweb-website/succes.html");
     // });
     //res.end("Registered, <a href='http://localhost/iweb-website/index.html'>Go back</a>");
-    res.redirect("http://localhost/iweb-website/");
+    res.redirect("http://localhost/iweb-website/dist/");
 });
 
 var server = app.listen(3000, function () {
-  console.log('Example app listening at port 3000');
+  console.log('Register Server listening on port 3000');
 });

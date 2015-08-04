@@ -29,12 +29,12 @@
 		</ol>
 
 		<h2>Download</h2>
-		<span>DOWNLOAD BOXES FOR ANDROID AND IOS</span>
+		<span><a href="#">iOS</a> - <a href="#">Android</a></span>
 
 		<h2>Registreer</h2>
-		<form action="http://localhost:3000/register" method="post">
-			<input type="text" placeholder="O101250" name="leerlingnum">
-			<input type="text" placeholder="pushbulletEmail@gmail.com" name="email">
+		<form action="http://localhost:3000/register" method="post" onsubmit="return validateInput();" returnValue="false">
+			<input type="text" placeholder="O101250" name="leerlingnum" id="leerlingnum">
+			<input type="text" placeholder="pushbulletEmail@gmail.com" name="email" id="email">
 			<input type="submit" value="Registreer!">
 		</form>
 		<p id="errors"><!-- Errors are being displayed here --></p>
@@ -47,8 +47,8 @@
 			<p>Deze website is gemaakt door <a href="mailto:renzowesterbeek@gmail.com">Renzo Westerbeek</a> in 2014-15</p>
 		</footer>
 	</div>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 	<script src="js/scripts.min.js"></script>
 </body>
 </html>
