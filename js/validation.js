@@ -4,6 +4,7 @@
 
 var inputErrors = [];
 
+// Intervents submit event and checks if InputErrors array is empty
 function validateInput(){
   if(inputErrors.length > 0){
     console.log("Some errors occured, form not submitted:");
@@ -17,8 +18,8 @@ function validateInput(){
   }
 }
 
+// Program loop
 $(document).ready(function(){
-
   $("#leerlingnum").keyup(function(){
     console.log(inputErrors);
     inputErrors = [];
