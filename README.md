@@ -6,7 +6,7 @@ Instructions and registration website for my InfoWeb Notification Server. All da
 _InfoWeb is the schedule system my school uses. I'm creating a service that sends notifications to students when their schedule changes._
 
 ## Todo
-- [ ] Add more leerlingnummer validation
-- [ ] Add email validation
 - [ ] Display errors on website
 - [ ] Create attractive website design
+- [x] Add more leerlingnummer validation
+- [x] Add email validation
