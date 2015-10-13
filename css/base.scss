@@ -12,10 +12,39 @@ h3{
 	text-transform: uppercase;
 	text-align: center;
 }
+h2{
+	padding-top: 20px;
+	padding-bottom: 10px;
+}
+#menu{
+  font-size: 16px;
+	display: block;
+	text-align: center;
+	padding-top: 5px;
+	padding-bottom: 10px;
+}
+#menu a{
+	color: #999999;
+	text-decoration: none;
+	text-transform: lowercase;
+}
+#menu a:hover{
+	color: #337ab7;
+	text-decoration: underline;
+}
+p,
+ol li{
+  font-size: 16px;
+}
+footer p{
+  font-size: 14px;
+}
 p{
 	text-align: center;
 }
 footer{
+	padding-top: 5px;
+	background-color: black;
 	position: absolute;
 	bottom: 0;
 	text-align: center;
