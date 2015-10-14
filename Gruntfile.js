@@ -60,7 +60,7 @@ module.exports = function(grunt){
 	        collapseWhitespace: true
 	      },
 	      files: {
-	        'dist/index.html': 'index.html',	// dest : src
+	        'dist/index.php': 'index.php',	// dest : src
 	      }
 	    }
 	  },
@@ -89,7 +89,7 @@ module.exports = function(grunt){
 		},
 		watch: {
 	    js: {
-	      files: ['js/**/*.js', ['!js/scripts.js']],
+	      files: ['js/*js', ['!js/scripts.js']],
 	      tasks: ['jshint:source', 'concat', 'uglify'],
 	    },
 	    style: {
@@ -97,7 +97,7 @@ module.exports = function(grunt){
 	      tasks: ['sass'],
 	    },
 	    html: {
-	      files: '*.html',
+	      files: '*.php',
 	      tasks: ['htmlmin'],
 	    },
 	  } // end of task config
