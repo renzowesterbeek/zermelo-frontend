@@ -14,6 +14,7 @@
     "grunt-ftp-deploy": "~0.1.0"
   },
   "dependencies": {
+    "grunt-exec": "^0.4.6",
     "mongojs": "^1.2.1"
   }
 }

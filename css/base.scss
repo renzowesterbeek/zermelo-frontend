@@ -1,2 +1,81 @@
 @import '_mixins.scss';		// Cross-browser implementation of transitions, shadows, etc
 @import '_fonts.scss';		// Font and font-style declarations
+
+$background: #D9F0FF;
+$dark: #055B73;
+$highlight: #1990A6;
+
+body{
+	background-color: $background;
+	color: $dark;
+}
+.container{
+	padding-top: 50px;
+}
+h1,
+h2,
+footer p{
+	text-align: center;
+	margin: 0;
+}
+h1{
+	padding-bottom: 5px;
+	font-size: 46px;
+}
+h2{
+	padding-bottom: 10px;
+	font-size: 24px;
+	font-style: italic;
+}
+ol{
+	margin: auto;
+	display: table;
+	text-align: center;
+	list-style-position:inside;
+	padding: 0;
+}
+ol li{
+	padding: 2px;
+	font-size: 16px;
+	margin: 0;
+}
+form{
+	display: table;
+	margin: auto;
+	padding: 10px 0;
+}
+form input[type=text]{
+	margin: 10px 5px;
+	padding: 10px;
+	width: 250px;
+	background-color: white;
+	border: 1px solid transparent;
+	@include transition(all 0.30s ease-in-out);
+	outline: none;
+}
+form input[type=text]:focus{
+	border: 1px solid red;
+}
+form input[type=submit]{
+	margin: auto;
+	display: table;
+	margin-top: 10px;
+	background-color: transparent;
+	font-size: 16px;
+	border: none;
+	margin-bottom: 20px;
+	color: $highlight;
+	@include transition(all 0.30s ease-in-out);
+}
+form input[type=submit]:hover{
+	color: $dark;
+	text-decoration: underline;
+}
+form p{
+	color: red;
+	text-align: center;
+}
+a{
+	color: $highlight;
+	@include transition(all 0.30s ease-in-out);
+}
