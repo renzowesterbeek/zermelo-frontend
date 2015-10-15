@@ -75,10 +75,10 @@ module.exports = function(grunt){
 		    auth: {
 		      host: 'ftp.westerbeek.us',
 		      port: 21,
-		      authKey: 'key1'
+		      authKey: 'westerbeekus'
 		    },
 		    src: 'dist/',
-		    dest: '/domains/westerbeek.us/public_html/renzo/',
+		    dest: '/domains/westerbeek.us/public_html/renzo/rooster/',
 		    exclusions: ['**/.DS_Store']
 		  }
 		},
