@@ -22,7 +22,7 @@
 			<li>Registreer je bij <a href="https://www.pushbullet.com/" target="_blank">Pushbullet</a></li>
 			<li>Download de Pushbullet app voor <a href="" target="_blank">iPhone</a> of <a href="#" target="_blank">Android</li>
 			<li>Vul je, bij Pushbullet-geregistreerde email-adres, in</li>
-			<li>Vul een App Code in die je via de <a href="https://scmoost.zportal.nl/" target="_blank">Zermelo Portal</a> hebt verkregen <br>(deze code had je ook nodig bij het activeren van de Zermelo app)</li>
+			<li>Vul een App Code in die je via de <a href="https://scmoost.zportal.nl/" target="_blank">Zermelo Portal</a> hebt verkregen <br><i>(Zermelo portal > koppelingen > koppel app)</i></li>
 			<li>Nu ontvang je notificaties!</li>
 		</ol>
 		<form action="http://80.60.105.179:3000/register" method="post">
