@@ -6,3 +6,4 @@ dist/
 js/scripts.js
 Gruntfile.js
 .sass-cache/
+.ftpconfig
