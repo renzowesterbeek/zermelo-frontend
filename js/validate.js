@@ -13,7 +13,7 @@ function logErrors(array){
     errorString += array[0];
   } else {
     for(var i = 0; i < array.length; i++){
-      errorString += array[i] + ", ";
+      errorString += "<li>" + array[i] + "</li>";
     }
   }
   $('form p').html(errorString);
@@ -41,10 +41,10 @@ $(document).ready(function(){
   $("form").submit(function(event){
     var errors = [];
     if($('#email').css('border-color').toString() == 'rgb(255, 0, 0)'){
-      errors.push('Email invalid');
+      errors.push('Email ongeldig');
     }
     if($('#appcode').css('border-color').toString() == 'rgb(255, 0, 0)'){
-      errors.push('Appcode invalid');
+      errors.push('Appcode ongeldig');
     }
 
     // Checking for errors

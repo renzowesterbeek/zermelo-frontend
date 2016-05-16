@@ -25,7 +25,7 @@
 			<li>Vul een App Code in die je via de <a href="https://scmoost.zportal.nl/" target="_blank">Zermelo Portal</a> hebt verkregen <br><i>(Zermelo portal > koppelingen > koppel app)</i></li>
 			<li>Nu ontvang je notificaties!</li>
 		</ol>
-		<form action="http://80.60.105.179:3000/register" method="post">
+		<form action="http://localhost:3000/register" method="post">
 			<input type="text" name="email" id="email" placeholder="Email-adres" value="<?php if(isset($_GET['email'])){ echo($_GET['email']);	} ?>">
 			<input type="text" name="appcode" id="appcode" placeholder="App Code" value="<?php if(isset($_GET['appcode'])){ echo($_GET['appcode']);	} ?>"><br>
 			<p><?php
@@ -33,7 +33,7 @@
 					echo($_GET['m']);
 				}
 			?></p>
-			<input type="submit" value="Registreer">
+			<input class="col-md-12" type="submit" value="Registreer">
 		</form>
 		<footer>
 			<p>Ontwikkeld door <a href="http://twitter.com/renzowesterbeek" target="_blank">Renzo Westerbeek</a>.</p>

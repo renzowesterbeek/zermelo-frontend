@@ -65,7 +65,7 @@ form input[type=submit]{
 	border: none;
 	margin-bottom: 20px;
 	color: $highlight;
-	@include transition(all 0.30s ease-in-out);
+	@include transition(color 0.30s ease-in-out);
 }
 form input[type=submit]:hover{
 	color: $dark;
@@ -74,6 +74,10 @@ form input[type=submit]:hover{
 form p{
 	color: red;
 	text-align: center;
+}
+form p li{
+	padding: 0;
+	list-style: none;
 }
 a{
 	color: $highlight;
